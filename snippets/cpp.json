@@ -1,0 +1,33 @@
+{
+  "setup": {
+    "prefix": ["setup", "classb"],
+    "body":[
+      "class ${1:MyClass}",
+      "{",
+      "private:",
+      "\t$2",
+      "",
+      "public:",
+      "\t$1();",
+      "\t~$1();",
+      "\t$1(const $1& ref);",
+      "\t$1& operator=(const $1& ref);",
+      "};",
+      "",
+      "$1::$1()",
+      "{",
+      "}",
+      "",
+      "$1::~$1()",
+      "{",
+      "}",
+      "$1::$1(const $1& ref)",
+      "{",
+      "}",
+      "$1& $1::operator=(const $1& ref)",
+      "{",
+      "}"
+    ],
+    "description": "Code snippet for basic class"
+  }
+}
